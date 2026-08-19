@@ -32,8 +32,6 @@ The website provides information about the coffee shop, its menu, customer revie
 ## Project Structure
 
 Brew-Bean/
-│
-├── html/
 │   ├── index.html
 │   ├── about.html
 │   ├── menu.html
