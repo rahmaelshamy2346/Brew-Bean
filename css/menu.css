@@ -1,0 +1,361 @@
+/* =========================
+   Menu Page Hero
+========================= */
+
+.menu-page-hero {
+    min-height: 55vh;
+    padding-top: 160px;
+    padding-bottom: 90px;
+
+    display: flex;
+    align-items: center;
+
+    background: #f3e7db;
+}
+
+.menu-page-hero h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(50px, 6vw, 78px);
+
+    line-height: 1.05;
+
+    color: #33231a;
+
+    margin-bottom: 25px;
+}
+
+.menu-page-hero h1 span {
+    color: #b86b3b;
+}
+
+.menu-hero-description {
+    max-width: 500px;
+
+    color: #766960;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   Menu Section
+========================= */
+
+.menu-section {
+    background: #fffaf4;
+}
+
+
+/* =========================
+   Menu Heading
+========================= */
+
+.menu-heading {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    gap: 30px;
+
+    margin-bottom: 50px;
+}
+
+.menu-heading h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(38px, 5vw, 56px);
+
+    line-height: 1.1;
+
+    color: #33231a;
+}
+
+.menu-heading h2 span {
+    color: #b86b3b;
+}
+
+.menu-heading > p {
+    max-width: 380px;
+
+    color: #776960;
+
+    font-size: 14px;
+}
+
+
+/* Space Between Categories */
+
+.menu-heading-space {
+    margin-top: 100px;
+}
+
+
+/* =========================
+   Menu Grid
+========================= */
+
+.menu-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+
+/* =========================
+   Menu Card
+========================= */
+
+.menu-card {
+    background: white;
+
+    border: 1px solid #eee1d4;
+
+    border-radius: 15px;
+
+    padding: 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    position: relative;
+
+    transition: 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(75, 45, 25, 0.08);
+}
+
+
+/* Featured Card */
+
+.menu-card.featured {
+    border: 2px solid #b86b3b;
+}
+
+
+/* =========================
+   Popular Badge
+========================= */
+
+.popular {
+    position: absolute;
+
+    top: -11px;
+
+    right: 20px;
+
+    background: #b86b3b;
+
+    color: white;
+
+    padding: 4px 10px;
+
+    font-size: 9px;
+
+    border-radius: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================
+   Menu Icon
+========================= */
+
+.menu-icon {
+    width: 65px;
+
+    height: 65px;
+
+    flex-shrink: 0;
+
+    border-radius: 12px;
+
+    background: #f4e8dc;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 30px;
+}
+
+
+/* =========================
+   Menu Information
+========================= */
+
+.menu-info {
+    flex: 1;
+}
+
+.menu-info h3 {
+    font-family: "Playfair Display", serif;
+
+    margin-bottom: 4px;
+
+    color: #33231a;
+}
+
+.menu-info p {
+    font-size: 12px;
+
+    color: #8b7c71;
+}
+
+.price {
+    color: #b86b3b;
+
+    white-space: nowrap;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+    background: #3a271c;
+
+    color: white;
+
+    padding: 75px 0;
+}
+
+.cta-content {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.cta .section-label {
+    color: #d69b6f;
+}
+
+.cta h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(38px, 5vw, 55px);
+
+    line-height: 1.1;
+}
+
+.cta-btn {
+    background: #d98954;
+
+    color: white;
+
+    padding: 15px 25px;
+
+    border-radius: 30px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: white;
+
+    color: #3a271c;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 900px) {
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-heading {
+        display: block;
+    }
+
+    .menu-heading > p {
+        margin-top: 20px;
+    }
+
+    .cta-content {
+        gap: 30px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .menu-page-hero {
+        min-height: 50vh;
+
+        padding-top: 130px;
+
+        padding-bottom: 70px;
+    }
+
+    .menu-page-hero h1 {
+        font-size: 50px;
+    }
+
+    .menu-heading-space {
+        margin-top: 70px;
+    }
+
+    .menu-card {
+        padding: 18px;
+
+        gap: 14px;
+    }
+
+    .menu-icon {
+        width: 55px;
+
+        height: 55px;
+
+        font-size: 25px;
+    }
+
+    .menu-info h3 {
+        font-size: 16px;
+    }
+
+    .menu-info p {
+        font-size: 11px;
+    }
+
+    .price {
+        font-size: 14px;
+    }
+
+    .cta-content {
+        display: block;
+    }
+
+    .cta-btn {
+        display: inline-block;
+
+        margin-top: 25px;
+    }
+
+}
