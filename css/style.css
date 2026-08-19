@@ -55,7 +55,8 @@ textarea {
 }
 
 .navbar {
-    height: 80px;
+    height: 80 px;
+   font-size: 20 px;
     display: flex;
     align-items: center;
     justify-content: space-between;
